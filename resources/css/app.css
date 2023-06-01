@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.t-card{
+    @apply h-full w-full bg-white rounded-lg border border-gray-200 shadow-md p-2 sm:p-6 md:p-8 ;
+}
+
+
+
+.t-card-body{
+    @apply mb-3 font-normal text-gray-700 dark:text-gray-400;
+}
+
+.t-card-footer{
+    @apply text-sm font-medium text-gray-500 dark:text-gray-300;
+}
+
+.t-btn{
+    @apply px-4 py-2 rounded transition hover:-translate-y-0.5 ease-in duration-150 font-bold;
+}
+
+
+.tailwind-table{
+    @apply border-collapse border-spacing-0 w-full max-w-full border-white overflow-x-scroll h-fit;
+}
+
+.tailwind-table>th,td{
+    @apply text-center py-4;
+}
+
+.tailwind-table>tbody>tr{
+    @apply even:bg-gray-200 hover:bg-gray-200;
+}
+
+.tailwind-table>thead>tr{
+    @apply text-center bg-gray-200;
+}
+
+.tailwind-table>thead>tr>th{
+    @apply px-6 py-3;
+}
+
