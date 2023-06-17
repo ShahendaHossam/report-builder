@@ -37,7 +37,7 @@ Route::get('aggregation_function/{dbconnection}/{import_data}', AggregationFunct
 Route::get('output_type/{dbconnection}/{import_data}/{aggregation_function}', OutputType::class)->name('output_type.index');
 Route::get('query-list/{dbconnection}/{import_data}/{aggregation_function}', QueryList::class)->name('query_list.index');
 Route::get('query-array/{dbconnection}/{import_data}/{aggregation_function}', QueryArray::class)->name('query_array.index');
-Route::get('query-mix', QueryMix::class)->name('query_mix.index');
+Route::get('query-mix/{dbconnection}/{import_data}/{aggregation_function}', QueryMix::class)->name('query_mix.index');
 Route::get('query-plots', QueryPlots::class)->name('query_plots.index');
 Route::get('query-result_field', QueryResultField::class)->name('query_result_field.index');
 Route::get('query-table/{dbconnection}/{import_data}/{aggregation_function}', QueryTable::class)->name('query_table.index');
