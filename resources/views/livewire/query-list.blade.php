@@ -5,8 +5,8 @@
                 <h1 class="text-3xl"><strong>{{ __('List') }}</strong></h1>
             </center>
         </div>
-        <div class="text-center mt-8">
-            <p class="px-6 py-3">{{ $this->aggregation_function->affected_column }}</p>
+        <div class="mt-8">
+            <h2 class="px-6 py-3">{{ $this->aggregation_function->affected_column }}</h2>
             <ul>
                 @foreach($query_list as $group_by_column)
                 @foreach($group_by_column as $key => $value)
